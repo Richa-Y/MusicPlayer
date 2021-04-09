@@ -1,0 +1,1151 @@
+body {
+  background-image: linear-gradient(
+    rgb(65, 18, 18),
+    black,
+    rgb(65, 18, 18),
+    blue,
+    black
+  );
+  height: auto;
+  width: auto;
+}
+/* top header */
+
+#top-header {
+  height: 18vh;
+}
+h3,
+h1 {
+  color: white;
+}
+
+h1:hover {
+  text-shadow: 2px 2px red;
+  font-size: 2.1rem;
+}
+/* page logo ie panda */
+#logo {
+  box-shadow: inset 10px 10px 50px yellow;
+  /* inset will give box shadow indide  */
+  width: 80px;
+  height: 90px;
+  float: left;
+  background-image: url("./images/logo.JPG");
+  border-radius: 50%;
+  padding: 4px;
+  background-size: cover;
+  background-position: center;
+  transition: 3s linear;
+}
+#logo:hover {
+  transform: rotateZ(360deg);
+  /* this will rotate the logo */
+  cursor: pointer;
+}
+
+#top-header h3 {
+  display: inline-block;
+  position: absolute;
+  margin-left: 10px;
+  color: white;
+}
+#top-header h3:hover {
+  text-shadow: 1px 1px red;
+}
+#top-btn {
+  background-color: transparent;
+  position: relative;
+
+  float: left;
+  margin-top: 30px;
+  width: 64%;
+  padding: 14px;
+  font-size: 1.3rem;
+  color: white;
+
+  border: transparent;
+}
+#top-right {
+  width: 40%;
+  height: 18vh;
+  float: right;
+  display: flex;
+}
+#icon input {
+  width: 85%;
+  outline: none;
+  padding: 14px;
+  font-size: 1rem;
+  border-radius: 20px;
+  border-color: transparent;
+}
+#icon {
+  display: inline-block;
+  width: 60%;
+  padding: 14px;
+  position: relative;
+  left: 12%;
+  top: 15%;
+}
+#icon a:hover {
+  color: red;
+}
+/* header drop button */
+#dropdown {
+  width: 20%;
+  display: inline-block;
+  height: inherit;
+  left: 12%;
+  position: relative;
+}
+/* right side near search box image */
+#right-image {
+  width: 12%;
+  height: 9vh;
+  background-image: url("./images/3.jpg");
+  border-radius: 50%;
+
+  background-size: cover;
+  background-position: center;
+  top: 15%;
+  position: relative;
+  left: 18%;
+}
+#drop-btn {
+  display: none;
+}
+#drop-btn a {
+  color: white;
+
+  height: 8vh;
+  display: block;
+  text-decoration: none;
+  background-color: grey;
+  box-shadow: inset 10px 10px 50px #151313;
+
+  font-size: 1.3rem;
+  padding: 4px;
+  position: relative;
+  right: 10%;
+  width: 80%;
+  z-index: 1;
+  display: inline-block;
+}
+#dropdown:hover #drop-btn {
+  display: block;
+}
+#drop-btn a:hover {
+  background-color: rgb(34, 32, 32);
+  color: maroon;
+}
+
+/* part-2 */
+/* main and aside section */
+
+.main {
+  width: 58%;
+
+  vertical-align: top;
+
+  display: inline-block;
+  position: relative;
+
+  margin-left: 80px;
+}
+.aside {
+  width: 32%;
+
+  height: auto;
+
+  display: inline-block;
+  margin-right: 10px;
+  float: right;
+  margin-top: 40px;
+}
+
+/* new met */
+/* main section 1 of 3 center images */
+.upper-head {
+  color: white;
+  margin-top: 60px;
+  cursor: pointer;
+}
+
+.upper-head:hover {
+  text-shadow: 2px 2px red;
+  font-size: 2.1rem;
+}
+/* new1 ,new2,new3 are the main center images */
+.new-full {
+  height: 40vh;
+  width: 97%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.new1 {
+  width: 45%;
+  display: inline-block;
+  height: 45vh;
+  transition: transform 1s;
+}
+.new1 img {
+  width: 100%;
+  height: 38vh;
+}
+.new2 {
+  width: 40%;
+  display: inline-block;
+  height: 42vh;
+  position: relative;
+
+  margin: auto;
+  transition: transform 1s;
+}
+.new2 img {
+  position: absolute;
+  width: 130%;
+  height: 40vh;
+  right: 10%;
+  transition: transform 1s;
+}
+
+.new3 {
+  width: 45%;
+  display: inline-block;
+  height: 45vh;
+  transition: transform 1s;
+}
+.new3 img {
+  width: 100%;
+  height: 38vh;
+  position: relative;
+  right: 10%;
+}
+.new1:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+.new2 img:hover {
+  border: 2px solid white;
+
+  box-shadow: 5px 10px 18px red;
+  border-top: 2px solid red;
+
+  z-index: 1;
+}
+.new3:hover {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+/* continue */
+
+/* 2part */
+/* 4 images of miley with lightup */
+.second-part {
+  width: auto;
+  height: 240px;
+}
+
+.second-image {
+  width: 14%;
+  height: 80px;
+
+  float: left;
+  position: relative;
+}
+.second-image img {
+  width: 100%;
+  /* height: 96px; */
+  height: 85px;
+  position: relative;
+}
+
+.miley {
+  top: 0;
+  height: 90%;
+  width: 50%;
+  opacity: 0;
+  transition: 0.4s;
+  transform: rotate3d(-1, 1, 0, 100deg);
+
+  background-color: red;
+  overflow: hidden;
+  position: absolute;
+}
+.miley-content {
+  color: white;
+  transform: translate(10%, -30%);
+  transition: 0.5s;
+  left: 10;
+  top: 18;
+  overflow: hidden;
+  position: absolute;
+}
+.miley-content i {
+  margin: 4px;
+}
+/* this will show a coloured background over image on hover */
+.second-image:hover .miley {
+  opacity: 0.8;
+  transform: rotate3d(0, 0, 0, 0deg);
+  overflow: hidden;
+  transition-delay: 0.1s;
+  cursor: pointer;
+}
+.second-image:hover .miley-content {
+  opacity: 1;
+}
+.secondR-image:hover .miley {
+  opacity: 0.8;
+  transform: rotate3d(0, 0, 0, 0deg);
+  overflow: hidden;
+  transition-delay: 0.1s;
+  cursor: pointer;
+}
+.secondR-image:hover .miley-content {
+  opacity: 1;
+}
+.secondR {
+  width: 52%;
+
+  float: right;
+  height: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  top: -8%;
+  justify-content: space-between;
+}
+.qwe {
+  position: relative;
+  top: 10%;
+  color: white;
+}
+.dot {
+  width: 10%;
+
+  color: white;
+  height: 60px;
+}
+.secondR-image {
+  position: relative;
+  right: 2%;
+  width: 28%;
+  /* height: 94px; */
+  height: 85px;
+
+  display: inline-block;
+}
+.secondR-image img {
+  width: 100%;
+  /* height: 94px; */
+  height: 85px;
+  position: relative;
+}
+.rty {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.ad {
+  width: 40%;
+  position: relative;
+
+  top: 14%;
+  right: 5%;
+  height: 10vh;
+  color: white;
+}
+.play-hover {
+  display: none;
+}
+.play-hover a {
+  width: 30%;
+  display: block;
+  background-color: darkgrey;
+}
+.dot1:hover .play-hover {
+  display: block;
+}
+
+.dot1 {
+  color: white;
+  width: 10%;
+
+  position: relative;
+  height: 60px;
+  top: 7%;
+}
+#lower {
+  position: relative;
+
+  margin-top: 70px;
+  height: 100px;
+}
+.secondRi {
+  width: 52%;
+  /* border:1px solid red; */
+  float: right;
+  height: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  top: -40%;
+  justify-content: space-between;
+}
+/* 4 section */
+/* artist sction */
+/* in this i have given overlay effect */
+.popular {
+  width: auto;
+  height: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.pop-artist1 {
+  width: 120px;
+  height: 26vh;
+  transition: transform 1s;
+  margin-bottom: 14px;
+}
+.pop-artist1 img {
+  width: 100%;
+  height: 18vh;
+  border-radius: 50%;
+  transition: transform 1s ease-in-out;
+}
+.center {
+  text-align: center;
+  color: white;
+  transition: transform 1s ease-in-out;
+}
+.show {
+  position: relative;
+}
+.hidden {
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.4s;
+  transform: rotate3d(-1, 1, 0, 100deg);
+  border-radius: 50%;
+
+  box-shadow: inset 10px 10px 50px red;
+  position: absolute;
+}
+.hidden2 {
+  color: white;
+  transform: translate(10%, -30%);
+  transition: 0.5s;
+  left: 35;
+  top: 50;
+  position: absolute;
+}
+.hidden2 i {
+  margin: 4px;
+}
+/* pop artist over hover effect */
+.pop-artist1:hover .center {
+  transform: scale(1.2);
+}
+.pop-artist1:hover .hidden {
+  opacity: 0.8;
+  transform: rotate3d(0, 0, 0, 0deg);
+
+  transition-delay: 0.1s;
+  cursor: pointer;
+}
+.pop-artist1:hover .hidden2 {
+  opacity: 1;
+
+  transition-delay: 0.7s;
+}
+
+/* second-last */
+/* types of music */
+.new-section {
+  width: auto;
+  height: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+}
+/* in this scale over hover is given */
+.type4 {
+  width: 120px;
+  height: 26vh;
+  position: relative;
+}
+.type4 img {
+  width: 100%;
+  height: 18vh;
+  border-radius: 50%;
+  transition: transform 1s ease-in-out;
+}
+
+.type4:hover img {
+  opacity: 0.8;
+
+  transform: scale(1.2);
+}
+
+.new-center {
+  position: absolute;
+  top: 18%;
+  left: 30%;
+  color: white;
+}
+.type4:hover h3 {
+  transform: scale(1.4);
+  color: blue;
+
+  background-color: rgb(43, 8, 25);
+  padding: 2px;
+}
+
+/* new-section 2 */
+/* latest hover effect  overlay section */
+.new-section2 {
+  height: auto;
+  width: auto;
+  background-image: linear-gradient(rgb(75, 15, 15), black);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/* in this insie image sacle on hover */
+
+.lower-image {
+  width: 250px;
+  height: 28vh;
+  margin: 2px;
+  overflow: hidden;
+  position: relative;
+}
+.lower-image img {
+  width: 100%;
+  height: inherit;
+  transition: all 0.5s linear;
+}
+.lower-image img:hover {
+  border-top: 2px solid red;
+  transform: scale(1.5);
+  border-left: 2px solid white;
+}
+
+.new-center21 {
+  position: absolute;
+  top: 35%;
+  left: 36%;
+  color: white;
+}
+/* latest eng */
+/* and latest hindi both */
+.latest-english {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.latest-hindi {
+  width: 100%;
+  height: auto;
+  background-image: linear-gradient(rgb(75, 15, 15), black);
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.late {
+  width: 6rem;
+  height: 10rem;
+  border-radius: 20px;
+  padding: 2px;
+  margin: 2px;
+  overflow: hidden;
+  transition: all 1s linear;
+}
+.late img {
+  width: 100%;
+  height: 6rem;
+  border-radius: 20px;
+  transition: all 1s linear;
+}
+.late img:hover {
+  transform: scale(1.2);
+}
+
+.middle {
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+
+  transition: transform 0.5s ease-in-out;
+}
+
+/* aside section */
+
+.aside-inside {
+  width: 58%;
+  color: white;
+
+  font-size: 1.8rem;
+
+  padding: 2px;
+}
+#aside-right {
+  color: white;
+  width: 30%;
+  float: right;
+  height: 5vh;
+
+  padding: 2px;
+  font-size: 1.6rem;
+
+  position: relative;
+  top: -40;
+}
+.drop2 {
+  display: none;
+  position: relative;
+  right: 8%;
+}
+.drop2 a {
+  display: block;
+  box-shadow: inset 10px 10px 50px grey;
+  color: white;
+  text-decoration: none;
+  position: relative;
+
+  right: 28%;
+  width: 140%;
+  height: 10vh;
+  z-index: 1;
+  font-size: 1.3rem;
+  padding: 4px;
+}
+.drop2 a:hover {
+  background-color: grey;
+}
+
+/* try wala */
+
+/* till here */
+
+#aside-right:hover .drop2 {
+  display: block;
+}
+.aside-one {
+  margin-top: 1rem;
+
+  height: 13vh;
+}
+.zero-one {
+  color: white;
+}
+.one {
+  border: 2px solid grey;
+  width: 25%;
+  /* width:20%; */
+  height: 13vh;
+  display: inline-block;
+  background-image: url("./images/5.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.one1 {
+  color: white;
+  display: inline-block;
+  width: 40%;
+  height: inherit;
+  padding: 2px;
+  font-size: 1.2rem;
+  position: relative;
+  top: -20;
+}
+
+p {
+  display: inline-block;
+}
+.aside_inner_icon a {
+  position: relative;
+  right: 4%;
+  width: 10%;
+  height: 5vh;
+  float: right;
+
+  color: red;
+  font-size: xx-large;
+  top: -100;
+}
+
+.two {
+  border: 2px solid grey;
+  width: 25%;
+  height: 13vh;
+  display: inline-block;
+  background-image: url("./images/9.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.three {
+  border: 2px solid grey;
+  width: 25%;
+  height: 13vh;
+  display: inline-block;
+  background-image: url("./images/popular_artist6.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.four {
+  border: 2px solid grey;
+  width: 25%;
+  height: 13vh;
+  display: inline-block;
+  background-image: url("./images/10.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.scroll {
+  width: 85%;
+  height: 600px;
+  overflow: scroll;
+}
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* last fixed music bar section */
+
+.fixed {
+  background-color: grey;
+  width: 100%;
+  height: 110px;
+  position: fixed;
+  top: 85%;
+  z-index: 1;
+}
+.fixed-pic {
+  width: 60px;
+  height: 74px;
+  display: inline-block;
+  position: relative;
+  left: 8%;
+  top: 5%;
+  float: left;
+  background-size: cover;
+  background-position: center;
+  background-image: url("./images/popular_artist6.jpg");
+}
+.fixed-pic img {
+  width: 100%;
+  height: 74px;
+  position: absolute;
+  z-index: 1;
+}
+.pic-text {
+  width: 20%;
+  height: auto;
+  display: inline-block;
+  /* float:left; */
+  position: relative;
+  left: 8%;
+  top: 6%;
+  color: white;
+  font-size: 1.1rem;
+  padding: 4px;
+}
+#icon a {
+  font-size: xx-large;
+  color: white;
+}
+.heart {
+  display: inline-block;
+  position: relative;
+  color: white;
+
+  font-size: xx-large;
+}
+.play {
+  left: 40%;
+  position: relative;
+  top: -45%;
+  width: 600px;
+  height: 600px;
+  /* background-color: blueviolet; */
+}
+.play a {
+  font-size: xx-large;
+  color: white;
+}
+/* all play buttons of music from font awesome */
+#play1 {
+  color: white;
+  font-size: x-large;
+  position: relative;
+  right: 5%;
+}
+#play2 {
+  color: white;
+  font-size: x-large;
+}
+#play3 {
+  color: white;
+  font-size: xx-large;
+
+  position: relative;
+  left: 5%;
+}
+#play4 {
+  color: white;
+  position: relative;
+  font-size: x-large;
+  left: 10%;
+}
+#play5 {
+  color: white;
+  position: relative;
+  font-size: x-large;
+  left: 15%;
+}
+.heart:hover {
+  color: red;
+  cursor: pointer;
+}
+#play3:hover {
+  color: red;
+  cursor: pointer;
+}
+/* #play1,
+#play12,
+#play3,
+#play4,
+#play5 :hover {
+  color: red;
+} */
+.range1 {
+  position: relative;
+  right: 10%;
+}
+.range2 {
+  position: relative;
+  left: 10%;
+}
+.range {
+  /* background-color: mediumspringgreen; */
+  position: relative;
+  top: 5%;
+  color: white;
+  right: 24%;
+}
+/* this will become visible on media queries as a drop down button */
+.isible {
+  display: none;
+  position: relative;
+}
+.assside {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  width: 40%;
+  height: auto;
+  background-color: black;
+  /* left: 60%;
+  top: -5%; */
+
+  top: -382px;
+}
+
+.isible:hover .assside {
+  display: block;
+}
+
+.drop-trying {
+  float: right;
+  position: fixed;
+  cursor: pointer;
+  z-index: 2;
+  /* right: 5%; */
+  /* top: -50; */
+  /* width: 15%; */
+  padding: 2px;
+  /* background-image:linear-gradient(blue,red,green); */
+  border-color: transparent;
+  background-color: transparent;
+  color: white;
+  border-radius: 20px;
+}
+.dot-link {
+  display: none;
+}
+.dot-link a {
+  color: white;
+  display: block;
+  background-color: grey;
+  width: 20%;
+  height: 80px;
+}
+.dot1:hover .dot-link a {
+  display: block;
+}
+
+/* media queries */
+
+@media screen and (max-width: 1030px) {
+  .aside {
+    display: none;
+  }
+  .isible {
+    display: block;
+  }
+  .main {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .main {
+    width: 100%;
+    margin-left: 0px;
+  }
+  /* .aside{
+             display:none;
+         } */
+  #dropdown {
+    display: none;
+  }
+  #logo {
+    text-align: center;
+
+    width: 80px;
+  }
+  #top-header {
+    display: flex;
+    height: auto;
+    flex-direction: row;
+  }
+  #top-header h3 {
+    position: relative;
+    text-align: center;
+  }
+  #top-right {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  #icon {
+    float: left;
+  }
+  /* .isible{
+             display:block;
+         } */
+  .secondR-image img {
+    width: 80%;
+  }
+  .second-image img {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .upper-head {
+    margin-top: 70px;
+  }
+  #top-header h1 {
+    font-size: 1.3rem;
+    padding: 2px;
+  }
+
+  .assside {
+    width: 60%;
+    left: 0%;
+    /* top:-5!important; */
+  }
+  /* .drop-trying {
+    right: 55%;
+  } */
+}
+
+@media screen and (max-width: 565px) {
+  .new3 {
+    display: none;
+  }
+
+  #icon a {
+    display: none;
+  }
+  .new1 {
+    display: none;
+  }
+  .new2 {
+    width: 90%;
+    height: 40vh;
+    /* right:0%; */
+  }
+  .new3 {
+    width: 48%;
+    height: 40vh;
+    right: 0%;
+  }
+  .new2 img {
+    width: 100%;
+    right: 0%;
+    height: 42vh;
+  }
+  .new3 img {
+    width: 100%;
+    right: 1%;
+    height: 42vh;
+  }
+  #play1 {
+    position: relative;
+    right: 2%;
+  }
+  /* .drop-trying {
+    right: 45%;
+    
+  } */
+
+  .range1 {
+    right: 0%;
+  }
+  .range2 {
+    left: 0%;
+  }
+
+  #play3 {
+    position: relative;
+    left: 3%;
+  }
+  #play4 {
+    position: relative;
+    left: 5%;
+  }
+  #play5 {
+    position: relative;
+    left: 8%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .secondr {
+    display: none;
+  }
+  #icon input {
+    height: 5vh;
+  }
+  .secondri {
+    display: none;
+  }
+  #right-image {
+    width: 40%;
+  }
+  .second-image {
+    width: 40%;
+  }
+  #logo {
+    width: 80px;
+  }
+  .main {
+    top: -10%;
+  }
+  #top-header {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+  }
+  #top-right {
+    width: 80%;
+    top: -50;
+    position: relative;
+  }
+  #icon input {
+    width: 100%;
+  }
+  #top-header h3 {
+    position: relative;
+    top: -100;
+  }
+  #icon {
+    width: 100%;
+  }
+  /* .assside {
+    width: 100%;
+    left: 4;
+  } */
+  .drop-trying {
+    display: none;
+  }
+  .fixed-pic {
+    left: 0%;
+  }
+  .pic-text {
+    font-size: 0.8rem;
+    left: 0%;
+  }
+  .heart {
+    display: none;
+  }
+  .play {
+    top: -34;
+    left: 30%;
+  }
+  #play1 {
+    font-size: small;
+    position: relative;
+    right: 2%;
+  }
+  #play2 {
+    font-size: small;
+  }
+  #play3 {
+    font-size: large;
+    position: relative;
+    left: 3%;
+  }
+  #play4 {
+    font-size: small;
+    position: relative;
+    left: 5%;
+  }
+  #play5 {
+    font-size: small;
+    position: relative;
+    left: 7%;
+  }
+  .range1 {
+    right: 0%;
+  }
+  .range2 {
+    left: 0%;
+  }
+}
+@media screen and (max-width: 318px) {
+  .range1 {
+    display: none;
+  }
+  .range2 {
+    display: none;
+  }
+  .play {
+    left: 25%;
+  }
+  .range {
+    display: none;
+  }
+}
